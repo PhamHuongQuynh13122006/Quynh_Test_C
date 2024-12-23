@@ -57,7 +57,7 @@ int main() {
                 printf("Input price: ");
                 scanf("%f", &menu[pos].price);
                 n++;
-                printf("Updated menu:\n");
+                printf("After change menu:\n");
                 printmenu(menu, n);
                 break;
             case 3:
@@ -73,7 +73,7 @@ int main() {
                 menu[pos].name[strcspn(menu[pos].name, "\n")] = '\0';
                 printf("Edit price: ");
                 scanf("%f", &menu[pos].price);
-                printf("Updated menu:\n");
+                printf("After change menu:\n");
                 printmenu(menu, n);
                 break;
             case 4:
@@ -87,7 +87,7 @@ int main() {
                     menu[i] = menu[i + 1];
                 }
                 n--;
-                printf("Updated menu after deletion:\n");
+                printf("Menu after deletion:\n");
                 printmenu(menu, n);
                 break;
             case 5:
@@ -100,7 +100,7 @@ int main() {
                         }
                     }
                 }
-                printf("Sorted menu by price:\n");
+                printf("After menu angeed is :\n");
                 printmenu(menu, n);
                 break;
             case 6:
@@ -124,10 +124,10 @@ int main() {
                 }
                 break;
             case 7:
-                printf("Exit program\n");
+                printf("Exit \n");
                 return 0;
             default:
-                printf("Invalid choice\n");
+                printf("Invalid ^ ^ \n");
                 break;
         }
     }
